@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.6 on win32)" generated="20210708 09:48:05.242" rpa="false" schemaversion="2">
+<suite id="s1" name="Selenium Test" source="C:\Users\sdas\Desktop\New folder\Selenium Suite\selenium_test.robot">
+<test id="s1-t1" name="TC9">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>Path</arg>
+<arg>${EXECDIR}${/}driver</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20210708 09:48:05.932" level="INFO">Environment variable 'Path' set to value 'C:\Users\sdas\Desktop\New folder\venv\Scripts;C:\Program Files\Python39\Scripts\;C:\Program Files\Python39\;C:\Users\sdas\Downloads\apache-maven-3.6.2-bin\apache-maven-3.6.2\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\CCM;C:\Program Files (x86)\Webex\Webex\Applications;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Sennheiser\SenncomSDK\;C:\Users\sdas\AppData\Roaming\Python\Python39\site-packages\robot;C:\Users\sdas\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2021.1.3\bin;;C:\Users\sdas\Desktop\New folder\driver'.</msg>
+<status status="PASS" starttime="20210708 09:48:05.931" endtime="20210708 09:48:05.933"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://www.db4free.net/</arg>
+<arg>browser=gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210708 09:48:05.934" level="INFO">Opening browser 'gc' to base url 'https://www.db4free.net/'.</msg>
+<status status="PASS" starttime="20210708 09:48:05.933" endtime="20210708 09:48:10.190"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=phpMyAdmin »</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210708 09:48:10.191" level="INFO">Clicking element 'link=phpMyAdmin »'.</msg>
+<status status="PASS" starttime="20210708 09:48:10.191" endtime="20210708 09:48:10.388"/>
+</kw>
+<status status="PASS" starttime="20210708 09:48:05.930" endtime="20210708 09:48:10.389"/>
+</test>
+<status status="PASS" starttime="20210708 09:48:05.246" endtime="20210708 09:48:10.393"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Selenium Test">Selenium Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
