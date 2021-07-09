@@ -115,19 +115,36 @@ TC8
         Maximize Browser Window
         Input Text    id=search    bedsheet
         Click Element    id=searchButton
-        Set Browser Implicit Wait    100s
-        Click Element    xpath=//div[@id='offerPopups']/a[@class='popup-close']
-        #Checkbox Should Be Selected    id=brarobotndsnameSleep_Dove
+        Set Selenium Implicit Wait    100s
+        Click Element    xpath=//div[@id='regPopUp']/a[@class='popup-close']
+        Click Element    xpath=//a[@class='clip__filter-search-icon']
+        Input Text    name=Brand search    Sleep Dove
+        Click Element   xpath=//label[@for='brandsnameSleep_Dove']
+        Set Selenium Implicit Wait    30s
+        Scroll Element Into View    xpath=//a[contains(text(),'100% Cotton 300TC')]
+        Set Selenium Implicit Wait    100s
+        Click Element    xpath=//span[contains(text(),'845')]
+        Set Selenium Implicit Wait    30s
+        Click Element    xpath=(//a[contains(@href,'100-cotton-king-size-bedsheet-set-of-3')]/following::a[contains(text(),'Add To Cart')])[1]
+        Scroll Element Into View    xpath=//a[@class='cart_bar']
+        Click Element    xpath=//a[@class='cart_bar']
+        Click Element    id=webklipper-publisher-widget-container-notification-close-div
+        Scroll Element Into View    link=Proceed to pay securely
+        Click Element    link=Proceed to pay securely
+        Scroll Element Into View    link=PLACE ORDER
+        Click Element    link=PLACE ORDER
+        Input Text    id=name    sonali
+        Scroll Element Into View    xpath=(//input[@id='mobile']/following::div[@class='error'])[1]
+        ${text}     Get Text    xpath=(//input[@id='mobile']/following::div[@class='error'])[1]
+        Log To Console    ${text}
 
 
-TC9
-        Append To Environment Variable    Path      ${EXECDIR}${/}driver
-        Open Browser    url=https://www.db4free.net/      browser=gc
-        Click Element    link=phpMyAdmin »
-        Switch Window    locator=NEW
-        Input Text      id=input_username    db123
-        Input Text      id=input_password    
-        ${message}      Get Text    xpath
+
+
+
+
+
+
 
 
 
